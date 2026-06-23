@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page Quick Notes Pro</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h3>Sticky Notes for this Page</h3>
+  <p id="page-title">Loading page info...</p>
+  
+  <div id="toast-notification" class="hidden">Note saved successfully!</div>
+  
+  <div class="toolbar">
+    <button id="bold-btn" title="Bold"><b>B</b></button>
+    <button id="italic-btn" title="Italic"><i>I</i></button>
+    <button id="underline-btn" title="Underline"><u>U</u></button>
+    
+    <label for="bg-color" title="Note Background Color">🎨 BG:</label>
+    <input type="color" id="bg-color" value="#ffffff">
+
+    <label for="text-color" title="Text Color">✏️ Text:</label>
+    <input type="color" id="text-color" value="#333333">
+  </div>
+
+  <div id="note-editor" contenteditable="true" placeholder="Type formatting rich notes here for this URL..."></div>
+  
+  <div id="char-counter">Characters: 0</div>
+
+  <div class="button-container">
+    <button id="save-btn">Save Note</button>
+    <button id="export-btn">Export Text</button>
+    <button id="clear-btn" class="secondary">Clear</button>
+  </div>
+  
+  <div id="counter-display"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

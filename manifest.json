@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Page Quick Notes Pro",
+  "version": "1.1",
+  "description": "An advanced context-specific sticky note pad with rich formatting, styling, and export functions.",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
